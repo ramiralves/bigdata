@@ -38,31 +38,7 @@
         <!-- marked the embedded servlet container as provided -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>         
-        </dependency>
-
-        <!-- test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>         
-        </dependency>
-
-        <!-- hot swapping, disable cache for template, enable live reload -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Optional, for bootstrap -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>${bootstrap.version}</version>
-           
+            <artifactId>spring-boot-starter-tomcat</artifactId>   
         </dependency>
 
 		<!--  
@@ -83,19 +59,6 @@
             <artifactId>spark-sql_${scala.compat.version}</artifactId>
             <version>${spark.version}</version>          
         </dependency>
-        
-		<!-- https://mvnrepository.com/artifact/com.crealytics/spark-excel -->
-		<dependency>
-		    <groupId>com.crealytics</groupId>
-		    <artifactId>spark-excel_${scala.compat.version}</artifactId>
-		    <version>0.10.2</version>
-		    <exclusions>
-		        <exclusion>
-		            <groupId>xml-apis</groupId>
-		            <artifactId>xml-apis</artifactId>
-		        </exclusion>
-		    </exclusions>		    
-		</dependency>
 		
         <dependency>
             <groupId>org.codehaus.janino</groupId>
@@ -161,20 +124,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-
-			  <plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-compiler-plugin</artifactId>
-			    <version>3.8.0</version>
-			    <configuration>
-			      <source>11</source>
-			      <target>11</target>
-			    </configuration>
-			  </plugin>
-
         </plugins>
 
     </build>
-  
   
 </project>

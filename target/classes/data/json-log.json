@@ -1,0 +1,79 @@
+[
+
+
+                        {
+                            "id": "GEDI_KMS_PINMode captura com CLEAR.scenario",
+                            "name": "GEDI_KMS_PINMode captura com CLEAR.scenario",
+                            "description": "GEDI_KMS_PINMode captura com CLEAR.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:43:12.063128",
+                            "end_time": "2021-11-17 14:45:17.392854",
+                            "elapsed_time": "0:02:05.329726",
+							"level": "Information",
+                            "result": "Success"
+                        },
+                        {
+                            "id": "GEDI_KMS_PINMode captura de PIN em claro.scenario",
+                            "name": "GEDI_KMS_PINMode captura de PIN em claro.scenario",
+                            "description": "GEDI_KMS_PINMode captura de PIN em claro.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:45:17.470530",
+                            "end_time": "2021-11-17 14:46:59.945392",
+                            "elapsed_time": "0:01:42.474862",
+							"level": "Information",
+                            "result": "Success"
+                        },
+                        {
+                            "id": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "name": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "description": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:47:00.023457",
+                            "end_time": "2021-11-17 14:48:38.966439",
+                            "elapsed_time": "0:01:38.942982",
+							"level": "Fatal",
+                            "result": "Error"
+
+                        },
+                        {
+                            "id": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "name": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "description": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:47:00.023457",
+                            "end_time": "2021-11-17 14:48:38.966439",
+                            "elapsed_time": "0:01:38.942982",
+							"level": "Error",
+                            "result": "Error"
+
+                        },
+                        {
+                            "id": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "name": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "description": "GEDI_KMS_PINMode obtendo buffer após PINMode_Exit.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:47:00.023457",
+                            "end_time": "2021-11-17 14:48:38.966439",
+                            "elapsed_time": "0:01:38.942982",
+							"level": "Error",
+                            "result": "Error"
+
+                        },                                                
+                        {
+                            "id": "GEDI_KMS_CapturePIN e GetPINBLOCK com formato pinblock ISO 0 e chave TDES.scenario",
+                            "name": "GEDI_KMS_CapturePIN e GetPINBLOCK com formato pinblock ISO 0 e chave TDES.scenario",
+                            "description": "GEDI_KMS_CapturePIN e GetPINBLOCK com formato pinblock ISO 0 e chave TDES.scenario",
+                            "is_loop": false,
+                            "loop_count": 0,
+                            "start_time": "2021-11-17 14:48:39.044117",
+                            "end_time": "2021-11-17 14:50:38.045902",
+                            "elapsed_time": "0:01:59.001785",
+							"level": "Information",
+							"result": "Success"
+						}
+]

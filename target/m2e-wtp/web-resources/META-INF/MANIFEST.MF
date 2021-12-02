@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: ramir
+Build-Jdk: 11.0.12
+Implementation-Title: bigdata-science
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: br.com.ufrj.engsoft.turma37
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/bigdata-science
+Created-By: Maven Integration for Eclipse
+

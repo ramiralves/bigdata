@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" th:href="@{favicon.ico}"/>
+
+    <title>Engenharia de Software - BigData</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+	
+	
+</head>
+
+<body> 
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Engenharia de Software - BigData</a>
+</nav>
+
+<main role="main" class="container">
+	<table id="example" class="display" style="width:100%;padding-top: 60px;">
+        <thead>
+            <tr>
+                <th>Arquivo</th>
+                <th>Tamanho</th>
+                <th>Dt. Processamento</th>
+                <th>Trace</th>
+                <th>Debug</th>
+                <th>Info</th>
+                <th>Warning</th>
+                <th>Error</th>
+                <th>Fatal</th>
+            </tr> 
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Arquivo</th>
+                <th>Tamanho</th>
+                <th>Dt. Processamento</th>
+                <th>Trace</th>
+                <th>Debug</th>
+                <th>Info</th>
+                <th>Warning</th>
+                <th>Error</th>
+                <th>Fatal</th>
+            </tr> 
+        </tfoot>
+    </table>
+    <button id="reload">Relaod</button>
+</main>
+<!-- /.container -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+<script>
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "processing": 	true,
+        "search":		true,
+        "serverSide": 	true,
+        "pageLength": 	10,
+        "ajax": 		"find",        
+        "columns": [
+            { "data": "fileName"	},
+            { "data": "fileSize"	},
+            { "data": "dataProcs"	},
+            { "data": "totalTrace" 	},
+            { "data": "totalDebug" 	},
+            { "data": "totalInfo" 	},
+            { "data": "totalWarn" 	},
+            { "data": "totalError" 	},
+            { "data": "totalFatal" 	}
+        ],
+        "columnDefs": [
+        	{
+                "render": function ( data, type, row ) {
+                    return data +' bytes';
+                },
+                "targets": 1        		
+        	}        	
+        ]
+    } );    
+    
+	$('#reload').click(function(){
+		table.ajax.reload();	    	
+    });
+} );
+</script>
+</body>
+</html>

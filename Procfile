@@ -1,1 +1,0 @@
-web: java -war target/engsoft-big-data.war
